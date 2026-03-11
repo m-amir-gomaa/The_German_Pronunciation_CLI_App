@@ -1,0 +1,66 @@
+[package]
+name = "german_pronouncer"
+version = "0.1.0"
+edition = "2021"
+authors = ["m-amir-gomaa"]
+description = "German pronunciation CLI with IPA, TTS, Vim motions, and fuzzy autocomplete"
+readme = "README.md"
+license = "MIT"
+
+[[bin]]
+name = "gp"
+path = "src/main.rs"
+
+[dependencies]
+# CLI
+clap = { version = "4", features = ["derive"] }
+
+# Terminal / raw input (for Vim modal engine)
+crossterm = "0.27"
+
+# Fuzzy matching (same engine as Helix editor)
+nucleo-matcher = "0.3"
+
+# Audio playback
+rodio = "0.17"
+
+# Audio recording (mic input)
+cpal = "0.15"
+
+# SQLite (word lists, scores, flashcards)
+rusqlite = { version = "0.31", features = ["bundled"] }
+
+# Config file (config.toml)
+serde = { version = "1", features = ["derive"] }
+toml = "0.8"
+
+# Async (for Edge TTS WebSocket calls)
+tokio = { version = "1", features = ["full"] }
+tokio-tungstenite = "0.21"
+futures-util = "0.3"
+
+# HTTP (Edge TTS negotiation)
+reqwest = { version = "0.11", features = ["json", "stream"] }
+
+# Whisper STT (wraps whisper.cpp)
+# whisper-rs = "0.10"   # Uncomment when building Phase 5 (requires cmake + libclang)
+
+# Levenshtein distance (pronunciation scoring)
+strsim = "0.11"
+
+# Error handling
+anyhow = "1"
+thiserror = "1"
+
+# Logging
+tracing = "0.1"
+tracing-subscriber = "0.3"
+
+[dev-dependencies]
+assert_cmd = "2"
+tempfile = "3"
+
+[profile.release]
+opt-level = 3
+strip = true
+lto = true

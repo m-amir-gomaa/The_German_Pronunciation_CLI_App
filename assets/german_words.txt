@@ -1,0 +1,145 @@
+Hallo
+Danke
+Bitte
+Entschuldigung
+Guten Morgen
+Guten Tag
+Guten Abend
+Auf Wiedersehen
+Tschüss
+Ja
+Nein
+Vielleicht
+Ich
+Du
+Er
+Sie
+Wir
+Ihr
+Sie
+Sprechen
+Lernen
+Verstehen
+Lesen
+Schreiben
+Hören
+Sehen
+Essen
+Trinken
+Schlafen
+Arbeiten
+Kaufen
+Verkaufen
+Kommen
+Gehen
+Fahren
+Fliegen
+Wohnen
+Lieben
+Hassen
+Wissen
+Kennen
+Denken
+Fragen
+Antworten
+Helfen
+Suchen
+Finden
+Brauchen
+Haben
+Sein
+Werden
+Können
+Müssen
+Wollen
+Dürfen
+Sollen
+Mögen
+Deutschland
+Österreich
+Schweiz
+Berlin
+Wien
+Zürich
+München
+Hamburg
+Frankfurt
+Köln
+Stuttgart
+Düsseldorf
+Leipzig
+Dresden
+Nürnberg
+Bremen
+Hannover
+Dortmund
+Essen
+Bochum
+Wuppertal
+Bielefeld
+Bonn
+Mannheim
+Karlsruhe
+Wiesbaden
+Münster
+Augsburg
+Chemnitz
+Kiel
+Halle
+Magdeburg
+Freiburg
+Krefeld
+Lübeck
+Oberhausen
+Erfurt
+Rostock
+Mainz
+Kassel
+Hagen
+Hamm
+Saarbrücken
+Mülheim
+Potsdam
+Ludwigshafen
+Oldenburg
+Leverkusen
+Osnabrück
+Heidelberg
+Darmstadt
+Paderborn
+Regensburg
+Ingolstadt
+Würzburg
+Fürth
+Wolfsburg
+Offenbach
+Ulm
+Heilbronn
+Pforzheim
+Göttingen
+Bottrop
+Trier
+Recklinghausen
+Reutlingen
+Bremerhaven
+Koblenz
+Bergisch Gladbach
+Jena
+Remscheid
+Erlangen
+Moers
+Siegen
+Hildesheim
+Salzgitter
+# ───────────────────────────────────────────────────────────────────
+# IMPORTANT: This file is a seed with ~120 words.
+# Before Phase 4 (full fuzzy autocomplete), replace it with the full
+# de_DE Hunspell wordlist or the Wiktionary German frequency list.
+#
+# Sources (both public domain / open license):
+#   Hunspell:   https://github.com/LibreOffice/dictionaries/tree/master/de
+#   Wiktionary: https://kaikki.org/dictionary/German/
+#
+# Expected final size: ~170,000 words, ~1.5 MB uncompressed.
+# The file is compiled into the binary via include_str! in autocomplete.rs.
+# ───────────────────────────────────────────────────────────────────

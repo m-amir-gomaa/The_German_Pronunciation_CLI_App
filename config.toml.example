@@ -1,0 +1,15 @@
+[editor]
+vim_mode = true
+vim_default_mode = "insert"   # "insert" or "normal"
+
+[tts]
+preferred_voice = "de-DE-KatjaNeural"   # or "de-DE-ConradNeural" for male voice
+fallback = "piper"                       # "piper" or "espeak"
+piper_model = "~/.local/share/pronouncer/de_DE-thorsten-high.onnx"
+
+[whisper]
+model = "base"   # tiny | base | small  (tiny = fastest, small = most accurate)
+
+[ui]
+show_ipa = true
+autocomplete_limit = 10
